@@ -17,34 +17,67 @@ a {
 }
 
 /* Navbar styles */
+/* Navbar container to fix it at top */
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem 0;
+  background: transparent;
+}
+
+/* Glass-style navbar box */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2rem;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #ddd;
+  width: 90%;
+  max-width: 1000px;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(3px);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+/* Adjust page content padding so it's not hidden under navbar */
+body {
+  padding-top: 6.5rem;
+}
+
+/* Site title */
 .site-title {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
+/* Navigation links */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
+/* Link styles */
 .nav-links a {
   color: #333;
   font-weight: 500;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
+/* Active and hover states */
 .nav-links a:hover,
-.nav-links .active {
-  text-decoration: underline;
+.nav-links a.active {
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 /* Footer styles */
 .site-footer {
