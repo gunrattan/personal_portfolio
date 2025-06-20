@@ -356,3 +356,27 @@ body {
 .btn:hover {
   background-color: #005f91;
 }
+
+/* side-by-side layout inside a card */
+.card-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-text {
+  flex: 1 1 60%;
+}
+
+.card-img {
+  flex: 1 1 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
