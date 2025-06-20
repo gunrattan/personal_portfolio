@@ -340,3 +340,19 @@ body {
   color: #0077b5;
   font-weight: 500;
 }
+/* simple blog buttons */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0077b5;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005f91;
+}
