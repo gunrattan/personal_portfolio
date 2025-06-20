@@ -46,3 +46,13 @@ a {
 .nav-links .active {
   text-decoration: underline;
 }
+/* Footer styles */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 3rem;
+}
